@@ -16,6 +16,6 @@ public class HashingUtils
         return hashingAlgorithm.ComputeHash(System.Text.Encoding.UTF8.GetBytes(input));
     }
     
-    public static string ButeArrayToHexString(byte[] bytes)
+    public static string ByteArrayToHexString(byte[] bytes)
     => BitConverter.ToString(bytes).Replace("-", "").ToLowerInvariant();
 }
